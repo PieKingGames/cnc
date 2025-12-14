@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Command & Conquer (DOS)</title>
+  <meta charset="utf-8">
+  <title>CNC DOS</title>
+</head>
+<body>
+
+  <div id="dos" style="width:100%; height:600px;"></div>
+
   <script src="js-dos.js"></script>
   <script>
     Dos(document.getElementById("dos"), {
@@ -12,29 +17,5 @@
     });
   </script>
 
-
-  <style>
-    body {
-      background: black;
-      margin: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    #dos {
-      width: 640px;
-      height: 400px;
-    }
-  </style>
-</head>
-<body>
-  <div id="dos"></div>
-
-  <script>
-    Dos(document.getElementById("dos"), {
-      url: "CNC_WORK/"
-    });
-  </script>
 </body>
 </html>
