@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Command & Conquer</title>
-
   <script src="https://js-dos.com/6.22/current/js-dos.js"></script>
 
   <style>
-    body {
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
       background: black;
-      color: #0f0;
-      font-family: monospace;
-      text-align: center;
     }
+
     #dos {
-      width: 640px;
-      height: 400px;
-      margin: 20px auto;
+      width: 100%;
+      height: 100%;
     }
   </style>
 </head>
 
 <body>
-  <h1>Command & Conquer</h1>
   <div id="dos"></div>
 
-
-
-<script>
-  window.onload = function () {
+  <script>
     Dos(document.getElementById("dos"), {
       url: "cc_gdi_novid.jsdos",
       wdosboxUrl: "https://js-dos.com/6.22/current/wdosbox.js"
     });
-  };
-</script>
-
-
+  </script>
 </body>
 </html>
