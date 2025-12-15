@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <title>Command & Conquer</title>
-
+  <title>Command & Conquer (Browser)</title>
   <style>
     html, body {
-      width: 100%;
-      height: 100%;
       margin: 0;
-      background: black;
-      overflow: hidden;
-    }
-    #dos {
       width: 100%;
       height: 100%;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
 
-<div id="dos"></div>
-
-<script src="https://dos.zone/player.js"></script>
-<script>
-  Dos(document.getElementById("dos"), {
-    url: "cc_gdi_novid.jsdos"
-  });
-</script>
+<iframe
+  src="https://dos.zone/player/?bundleUrl=https%3A%2F%2Fpiekinggames.github.io%2Fcnc-browser%2Fcc_gdi_novid.jsdos&anonymous=1"
+  allowfullscreen>
+</iframe>
 
 </body>
 </html>
