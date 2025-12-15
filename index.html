@@ -23,14 +23,14 @@
 
 <div id="dos"></div>
 
-<script src="js-dos.js"></script>
-<script>
-  Dos(document.getElementById("dos"), {
-    url: "cc_gdi_novid.jsdos",
-    wdosboxUrl: "wdosbox.js",
-    wasmUrl: "wdosbox.wasm"
+<script src="js-dos.js" onload="
+  console.log('js-dos loaded');
+  Dos(document.getElementById('dos'), {
+    url: 'cc_gdi_novid.jsdos',
+    wdosboxUrl: 'wdosbox.js',
+    wasmUrl: 'wdosbox.wasm'
   });
-</script>
+"></script>
 
 </body>
 </html>
